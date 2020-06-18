@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Start to mix{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  {% if g.user %}
+    <p>You are logged id</p>
+  {% else %}
+    <p>Create an account to start sync your music!</p>
+  {% endif %}
+{% endblock %}

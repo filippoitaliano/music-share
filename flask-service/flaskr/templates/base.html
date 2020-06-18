@@ -1,8 +1,9 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Flaskr</title>
+<title>{% block title %}{% endblock %} - Music Match</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+{% block javascript %}{% endblock %}
 <nav>
-  <h1>Flaskr</h1>
+  <h1>Music Match</h1>
   <ul>
     {% if g.user %}
       <li><span>{{ g.user['username'] }}</span>
